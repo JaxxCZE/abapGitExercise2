@@ -19,7 +19,10 @@ CLASS ZCL_AG_EX_2 IMPLEMENTATION.
 METHOD get_file_name.
 CALL FUNCTION 'FILE_GET_NAME'
 EXPORTING
+
 logical_filename = iv_logical_file_name
+
+
 IMPORTING
 file_name = rv_file_name
 EXCEPTIONS
